@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --cor-primaria: #000;
+    --cor-secundaria: #F1B4BB;
+    --text-color: #FDF0F0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--text-color);
+    /* height: 100vh; */
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding-top: 2%;
+    width: 100%;
+}
+
+.foto__perfil{
+    /* width: 80px;
+    height: 80px; */
+    width: 10%;
+    margin-right: 8px;
+}
+
+.section__header h1{
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: lighter;
+    color: var(--text-color);
+}
+
+.section__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.section__menu{
+    display: flex;
+    font-family: 'JetBrains Mono', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 200;
+    text-decoration: none;
+    color: var(--text-color);
+    gap: 30px;
+    width: 50%;
+    justify-content: center;   
+}
+
+.contatos__menu{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.contatos__menu:hover{
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+.apresentacao{
+    padding: 3% 0%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.apresentacao__titulo{
+    font-family: 'JetBrains Mono', monospace;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: left;
+    word-spacing: 15px;
+}
+
+#apresentacao__tecnologias-resumo{
+    color: var(--cor-secundaria);
+}
+
+#apresentacao__resumo{
+    font-family: 'Outfit', sans-serif;
+    font-weight: lighter;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+.section__contatos{
+    width: 328px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    gap: 12px;
+}
+
+.section__contatos h2{
+    font-weight: 200;
+}
+
+.contatos__resumo{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--text-color);
+    width: 180px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 10px 14px;
+    text-align: center;
+}
+
+.contatos__resumo:hover{
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+}
+
+.footer__infos{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#icone-email{
+    width: 45px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+}
+
+.footer__email-container{
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 1200px){
+
+    header{
+        box-sizing: border-box;
+        padding: 4% 5% 4% 0%;
+        align-items: center;
+    }
+
+    .section__header h1{
+        font-size: 1.6rem;
+    }
+
+    .contatos__menu{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .apresentacao{
+        padding: 4%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .apresentacao__titulo{
+        font-size: 2rem;
+    }
+
+    .apresentacao__resumo{
+        font-size: 2rem;
+    }
+
+    .footer__infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5% 0%;
+    }
+}
