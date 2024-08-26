@@ -165,8 +165,13 @@ header{
 
     header{
         box-sizing: border-box;
-        padding: 4% 5% 4% 0%;
+        padding: 4% 5% 4% 10%;
         align-items: center;
+        gap: 5%;
+    }
+
+    .foto__perfil{
+        width: 20%;
     }
 
     .section__header h1{
@@ -179,7 +184,7 @@ header{
     }
 
     .apresentacao{
-        padding: 4%;
+        padding: 4% 15%;
     }
 
     .apresentacao__conteudo{
@@ -200,5 +205,16 @@ header{
         justify-content: center;
         align-items: center;
         padding: 5% 0%;
+    }
+}
+
+@media(max-width: 670px){
+
+    .foto__perfil{
+        width: 25%;
+    }
+
+    .section__header h1{
+        font-size: 1.3rem;
     }
 }
